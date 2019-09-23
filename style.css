@@ -12,8 +12,14 @@ label {
   font-weight: bold;
 }
 
+/* header */
+.logo {
+  height: 105px;
+}
+
 .header {
   padding: 70px;
+  text-align: center;
 }
 .col-2.logo-content {
   text-align: right;
@@ -22,10 +28,12 @@ label {
 .test-text {
   font-size: 94px;
 }
+
 .hero {
   margin-bottom: 200px;
 }
 
+/* Sections */
 .block-section {
   display: block;
   width: 100%;
@@ -42,6 +50,7 @@ label {
 .developer-text {
   margin-bottom: 50px;
 }
+
 .block-img {
   margin: 70px auto;
   height: 375px;
@@ -49,6 +58,7 @@ label {
   display: flex;
   justify-content: center;
 }
+
 .developer-content .logo-uaify img {
   height: 110px;
   width: auto;
@@ -116,6 +126,7 @@ label {
   display: block;
 }
 
+/* Contact */
 .block-section.section-contact {
   margin-bottom: 80px;
 }
@@ -135,23 +146,18 @@ label {
   font-weight: 300;
 }
 
+/* footer */
+
 .footer {
   background: #ff9201;
   padding: 80px 50px;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
 }
 
 .footer img {
   height: 100px;
 }
 
-nav {
-  flex: 1;
-}
-
-ul.nav-footer-list {
+.nav-footer-list {
   display: flex;
   list-style: none;
 }
@@ -163,4 +169,86 @@ li.nav-item {
 li.nav-item a {
   color: #fff;
   text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .logo {
+    height: 50px;
+  }
+
+  .block-section {
+    padding: 0 20px;
+  }
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  p,
+  label {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .test-text {
+    font-size: 30px;
+  }
+
+  .hero {
+    margin-bottom: 50px;
+  }
+
+  .developer-content .logo-uaify img {
+    height: 70px;
+    margin-top: 15px;
+  }
+
+  .block-img {
+    margin: 30px auto;
+    height: auto;
+  }
+
+  .box-icon-content {
+    font-size: 14px;
+  }
+
+  .box-text,
+  .small-text {
+    font-size: 14px;
+  }
+
+  .section-bottom p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .developer-content {
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .nav-footer-list {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+  }
+
+  li.nav-item {
+    margin-left: 0px;
+  }
 }
